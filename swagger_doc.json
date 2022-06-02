@@ -1,0 +1,1602 @@
+{
+	"info": {
+		"_postman_id": "b61c05a2-8399-4362-b4f8-e2740f3878e5",
+		"name": "Egommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "manage barang",
+					"item": [
+						{
+							"name": "Create Barang",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama_barang",
+											"value": "Topi",
+											"type": "text"
+										},
+										{
+											"key": "harga_barang",
+											"value": "20000",
+											"type": "text"
+										},
+										{
+											"key": "stok_barang",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "kategori_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}barang",
+									"host": [
+										"{{url}}barang"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read Barang",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}barang",
+									"host": [
+										"{{url}}barang"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read Barang By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}barang/2",
+									"host": [
+										"{{url}}barang"
+									],
+									"path": [
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Barang",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama_barang",
+											"value": "Topi",
+											"type": "text"
+										},
+										{
+											"key": "harga_barang",
+											"value": "20000",
+											"type": "text"
+										},
+										{
+											"key": "stok_barang",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "kategori_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}barang/1",
+									"host": [
+										"{{url}}barang"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Barang",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}barang/2",
+									"host": [
+										"{{url}}barang"
+									],
+									"path": [
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "manage voucher",
+					"item": [
+						{
+							"name": "Create Voucher",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama_voucher",
+											"value": "Hari Libur",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi_voucher",
+											"value": "Voucher untuk libur",
+											"type": "text"
+										},
+										{
+											"key": "diskon",
+											"value": "0.2",
+											"type": "text"
+										},
+										{
+											"key": "kategori_id",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}voucher",
+									"host": [
+										"{{url}}voucher"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read Voucher",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}voucher",
+									"host": [
+										"{{url}}voucher"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read Voucher By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}voucher/1",
+									"host": [
+										"{{url}}voucher"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Voucher",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama_voucher",
+											"value": "Hari Libur",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi_voucher",
+											"value": "Voucher untuk libur",
+											"type": "text"
+										},
+										{
+											"key": "diskon",
+											"value": "0.2",
+											"type": "text"
+										},
+										{
+											"key": "kategori_id",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}voucher/1",
+									"host": [
+										"{{url}}voucher"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Voucher",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}voucher/1",
+									"host": [
+										"{{url}}voucher"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "manage kategori",
+					"item": [
+						{
+							"name": "Create Kategori",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama_kategori",
+											"value": "Fashion",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi_voucher",
+											"value": "Voucher untuk libur",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "diskon",
+											"value": "0.2",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "kategori_id",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}kategori",
+									"host": [
+										"{{url}}kategori"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read Kategori",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}kategori",
+									"host": [
+										"{{url}}kategori"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read Kategori By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}kategori/1",
+									"host": [
+										"{{url}}kategori"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Kategori",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama_kategori",
+											"value": "Fashion",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi_voucher",
+											"value": "Voucher untuk libur",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "diskon",
+											"value": "0.2",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "kategori_id",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}kategori/1",
+									"host": [
+										"{{url}}kategori"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Kategori",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}kategori/1",
+									"host": [
+										"{{url}}kategori"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "manage pengirim",
+					"item": [
+						{
+							"name": "Create Penigirim",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama_pengirim",
+											"value": "Si cepat",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi_voucher",
+											"value": "Voucher untuk libur",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "diskon",
+											"value": "0.2",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "kategori_id",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}pengirim",
+									"host": [
+										"{{url}}pengirim"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read Pengirim",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}pengirim",
+									"host": [
+										"{{url}}pengirim"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read Pengirim By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}pengirim/1",
+									"host": [
+										"{{url}}pengirim"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Pengirim",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama_pengirim",
+											"value": "Si cepat",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi_voucher",
+											"value": "Voucher untuk libur",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "diskon",
+											"value": "0.2",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "kategori_id",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}pengirim/1",
+									"host": [
+										"{{url}}pengirim"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Pengirim",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}pengirim/1",
+									"host": [
+										"{{url}}pengirim"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "manage user",
+					"item": [
+						{
+							"name": "Create User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "rizki",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "rizki@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "nama",
+											"value": "rizki",
+											"type": "text"
+										},
+										{
+											"key": "alamat",
+											"value": "Kopo",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}user",
+									"host": [
+										"{{url}}user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}user",
+									"host": [
+										"{{url}}user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read User By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}user/1",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "rizki",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "rizki@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "nama",
+											"value": "rizki",
+											"type": "text"
+										},
+										{
+											"key": "alamat",
+											"value": "Kopo",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}user/3",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNDQxNjcsImlhdCI6MTYzMjUzOTM2NywibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6MX0.2iAhKti6ijVbKRgNxmwzc2hXXkUqEILJU7WFONtztYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}user/1",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "fauzi190198@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}admin/login",
+							"host": [
+								"{{url}}admin"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Monitor Transaksi",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNTUwODgsImlhdCI6MTYzMjU1MDI4OCwibmFtZSI6InJpemtpIiwicm9sZSI6InVzZXIiLCJ1c2VyX2lkIjoyfQ.PupIYXK52H3PgVBS3YXpKlzcBKP_lVoJ93BsLnVj6jc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}admin/transaksi",
+							"host": [
+								"{{url}}admin"
+							],
+							"path": [
+								"transaksi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Monitor Transaksi By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNTUwODgsImlhdCI6MTYzMjU1MDI4OCwibmFtZSI6InJpemtpIiwicm9sZSI6InVzZXIiLCJ1c2VyX2lkIjoyfQ.PupIYXK52H3PgVBS3YXpKlzcBKP_lVoJ93BsLnVj6jc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}admin/transaksi/1",
+							"host": [
+								"{{url}}admin"
+							],
+							"path": [
+								"transaksi",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "rizki@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}login",
+							"host": [
+								"{{url}}login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "rizki@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "rizki",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "rizki",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Kopo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}register",
+							"host": [
+								"{{url}}register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Transaksi",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNTUwODgsImlhdCI6MTYzMjU1MDI4OCwibmFtZSI6InJpemtpIiwicm9sZSI6InVzZXIiLCJ1c2VyX2lkIjoyfQ.PupIYXK52H3PgVBS3YXpKlzcBKP_lVoJ93BsLnVj6jc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}transaksi",
+							"host": [
+								"{{url}}transaksi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Transaksi By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNTUwODgsImlhdCI6MTYzMjU1MDI4OCwibmFtZSI6InJpemtpIiwicm9sZSI6InVzZXIiLCJ1c2VyX2lkIjoyfQ.PupIYXK52H3PgVBS3YXpKlzcBKP_lVoJ93BsLnVj6jc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}transaksi/1",
+							"host": [
+								"{{url}}transaksi"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Make Transaction without Voucher",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNTAwNjEsImlhdCI6MTYzMjU0NTI2MSwibmFtZSI6InJpemtpIiwicm9sZSI6InVzZXIiLCJ1c2VyX2lkIjoyfQ.4WGAm0v12iVM0mKNgZ329BJb2zrT2Su7YeOjj9HRbto",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "barang_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "barang_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "barang_id",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "kuantitas",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "kuantitas",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "kuantitas",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "pengirim_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}transaksi",
+							"host": [
+								"{{url}}transaksi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Make Transaction with Voucher Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNTAwNjEsImlhdCI6MTYzMjU0NTI2MSwibmFtZSI6InJpemtpIiwicm9sZSI6InVzZXIiLCJ1c2VyX2lkIjoyfQ.4WGAm0v12iVM0mKNgZ329BJb2zrT2Su7YeOjj9HRbto",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "barang_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "barang_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "barang_id",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "kuantitas",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "kuantitas",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "kuantitas",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "pengirim_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "voucher_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}transaksi",
+							"host": [
+								"{{url}}transaksi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNTUwODgsImlhdCI6MTYzMjU1MDI4OCwibmFtZSI6InJpemtpIiwicm9sZSI6InVzZXIiLCJ1c2VyX2lkIjoyfQ.PupIYXK52H3PgVBS3YXpKlzcBKP_lVoJ93BsLnVj6jc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}profile",
+							"host": [
+								"{{url}}profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxNTUwODgsImlhdCI6MTYzMjU1MDI4OCwibmFtZSI6InJpemtpIiwicm9sZSI6InVzZXIiLCJ1c2VyX2lkIjoyfQ.PupIYXK52H3PgVBS3YXpKlzcBKP_lVoJ93BsLnVj6jc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMxMDkzNTQsImlhdCI6MTYzMjUwNDU1NCwibmFtZSI6IkZhdXppIiwicm9sZSI6ImFkbWluIiwidXNlcl9pZCI6Mn0.uuKnhF6ZRmv0mZWQ3UNXZ3Ak4X-__nmA1WZy3pB_FlU",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "rizki",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "rizki@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "rizki",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Kopo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}profile",
+							"host": [
+								"{{url}}profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

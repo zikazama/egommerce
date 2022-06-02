@@ -1,0 +1,133 @@
+===BARANG===
+
+GET https://egommerce.herokuapp.com/barang/
+
+GET https://egommerce.herokuapp.com/barang/{BARANG_ID}
+
+POST https://egommerce.herokuapp.com/barang/
+
+PUT https://egommerce.herokuapp.com/barang/{BARANG_ID}
+
+DELETE https://egommerce.herokuapp.com/barang/{BARANG_ID}
+
+==detail data barang==
+
+id: int
+created_at: datetime
+updated_at: datetime
+deleted_at: datetime
+kategori_id: int
+nama_barang: string
+harga_barang: string
+stok_barang: int
+
+===VOUCHER===
+
+GET https://egommerce.herokuapp.com/voucher/
+
+GET https://egommerce.herokuapp.com/voucher/{VOUCHER_ID}
+
+POST https://egommerce.herokuapp.com/voucher/
+
+PUT https://egommerce.herokuapp.com/voucher/{VOUCHER_ID}
+
+DELETE https://egommerce.herokuapp.com/voucher/{VOUCHER_ID}
+
+==detail data voucher==
+
+id: int
+created_at: datetime
+updated_at: datetime
+deleted_at: datetime
+nama_voucher: string
+deskripsi_voucher: string
+diskon: decimal
+
+===KATEGORI===
+
+GET https://egommerce.herokuapp.com/kategori/
+
+GET https://egommerce.herokuapp.com/kategori/{KATEGORI_ID}
+
+POST https://egommerce.herokuapp.com/kategori/
+
+PUT https://egommerce.herokuapp.com/kategori/{KATEGORI_ID}
+
+DELETE https://egommerce.herokuapp.com/kategori/{KATEGORI_ID}
+
+==detail data kategori==
+
+id: int
+created_at: datetime
+updated_at: datetime
+deleted_at: datetime
+nama_kategori: string
+
+===PENGIRIM===
+
+GET https://egommerce.herokuapp.com/pengirim/
+
+GET https://egommerce.herokuapp.com/pengirim/{PENGIRIM_ID}
+
+POST https://egommerce.herokuapp.com/pengirim/
+
+PUT https://egommerce.herokuapp.com/pengirim/{PENGIRIM_ID}
+
+DELETE https://egommerce.herokuapp.com/pengirim/{PENGIRIM_ID}
+
+==detail data pengirim==
+
+id: int
+created_at: datetime
+updated_at: datetime
+deleted_at: datetime
+nama_pengirim: string
+
+===USER===
+
+GET https://egommerce.herokuapp.com/user/
+
+GET https://egommerce.herokuapp.com/user/{USER_ID}
+
+POST https://egommerce.herokuapp.com/user/
+
+PUT https://egommerce.herokuapp.com/user/{USER_ID}
+
+DELETE https://egommerce.herokuapp.com/user/{USER_ID}
+
+==detail data user==
+
+id: int
+created_at: datetime
+updated_at: datetime
+deleted_at: datetime
+username: string
+email: string
+password: string
+role: string
+nama: string
+alamat: string
+
+===ADMIN===
+
+GET https://egommerce.herokuapp.com/admin/transaksi/
+
+GET https://egommerce.herokuapp.com/admin/transaksi/{TRANSAKSI_ID}
+
+POST https://egommerce.herokuapp.com/admin/login/
+
+===USER===
+
+POST https://egommerce.herokuapp.com/login/
+
+POST https://egommerce.herokuapp.com/register/
+
+GET https://egommerce.herokuapp.com/transaksi/
+
+GET https://egommerce.herokuapp.com/transaksi/{TRANSAKSI_ID}
+
+POST https://egommerce.herokuapp.com/transaksi/
+
+GET https://egommerce.herokuapp.com/profile/
+
+POST https://egommerce.herokuapp.com/profile/
